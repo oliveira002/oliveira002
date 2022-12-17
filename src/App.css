@@ -4,6 +4,10 @@
   pointer-events: none;
 }
 
+.App {
+  background: #0d1117;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

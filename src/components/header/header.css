@@ -7,15 +7,20 @@ ul {
 
 }
 
+.fix2 {
+    width: 100%;
+    box-shadow: rgba(71, 71, 71, 0.32) 0px 0px 4px;
+}
 header {
+    max-width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
     text-align: center;
     align-items: center;
     display: flex;
     height: 4.5em;
-    margin-bottom: 2em;
     justify-content:space-between;
     background-color: #0d1117;
-    box-shadow: rgba(71, 71, 71, 0.32) 0px 0.5px 4px;
 }
 
 
@@ -29,6 +34,9 @@ header {
     color: white;
 }
 
+.links li:hover {
+    color: rgb(221, 221, 221);
+}
 
 .nav {
     margin-left: auto;

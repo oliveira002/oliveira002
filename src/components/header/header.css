@@ -1,0 +1,47 @@
+:root {
+--texto: var(#838383);
+}
+
+ul {  
+    list-style-type: none; 
+
+}
+
+header {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    height: 4.5em;
+    margin-bottom: 2em;
+    justify-content:space-between;
+    background-color: #0d1117;
+}
+
+
+.links {
+    display: flex;
+    margin: 0;
+}
+
+.links li {
+    margin-right: 4em;
+    color: white;
+}
+
+
+.nav {
+    margin-left: auto;
+}
+
+.reset, .reset:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.logo {
+    margin-left: 4em;
+    color: white;
+}
+
+
+

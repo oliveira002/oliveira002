@@ -10,7 +10,7 @@ export const Navbar = () => {
                 <nav className = "d-flex">
                     <ul className = "links">
                         <li> <a href= "" className="h5 reset">Home</a></li>
-                        <li> <a href= "" className="h5 reset">Projects</a></li>
+                        <li> <a href= "#projectos" className="h5 reset">Projects</a></li>
                         <li> <a href= "" className="h5 reset">About Me</a></li>
                     </ul>
                 </nav>

@@ -47,8 +47,8 @@
 .work {
     margin-top: 1em;
     background: none;
-    color: aquamarine;
-    border: 2px solid aquamarine;
+    color: rgb(0, 191, 216);
+    border: 2px solid rgb(0, 202, 216);
     padding: 8px;
     border-radius: 8px;
     overflow: hidden;
@@ -62,12 +62,25 @@
 
 .fix {
     width: 100%;
-}
-
-.socials {
-    fill: white;
+    height: 92%;
+    background: radial-gradient(98% 37.599999999999994% at 50% 105.5%,rgb(26, 107, 139) 0%,#111013 100%);
 
 }
-.clr img {
-    fill: white;
+
+.gif {
+    margin-left: 8em;
+    margin-top: 5em;
+}
+
+.amazing button {
+    transition: transform .2s;
+}
+
+.amazing button:hover {
+    transform: scale(1.05);
+}
+
+.socials li:hover {
+    border-bottom: white 2px solid;
+    padding-bottom: 4px;
 }

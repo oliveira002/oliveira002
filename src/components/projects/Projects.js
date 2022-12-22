@@ -94,7 +94,7 @@ export const Projects = () => {
           if(entry.isIntersecting) {
             entry.target.classList.add('animate__animated')
             if(entry.target.classList.contains('ola')) {
-              entry.target.classList.add('animate__fadeInUp')
+              entry.target.classList.add('animate__zoomIn')
             }
             else if(entry.target.classList.contains('impar')) {
               entry.target.classList.add('animate__fadeInLeft')
@@ -116,17 +116,17 @@ export const Projects = () => {
         <div className="fix3" id = "projectos">
             <div className="selection mt-2">
                 <div className="mx-auto">
-                    <div ref = {fst}className="proj mt-2 impar"> Projects </div>
-                    <div ref = {snd} className = "par">
+                    <div ref = {fst}className="proj mt-5 impar"> Projects </div>
+                    <div ref = {snd} className = "par mt-2">
                       <p className="h3" >Here you can view most of the projects I developed, in case you want</p>
                       <div className="h3" >to view them in detail by clicking on them you will be redirected to its repository.</div>
                     </div>
-                    <div ref = {thr} className="filters mt-4 impar">
+                    <div ref = {thr} className="filters mt-5 impar">
                         <button id = "web"className="on"  value = "web" onClick={handleBtns} > Web Development </button>
                         <button id = "algorithms" value = "algorithms" onClick={handleBtns}> Algorithms </button>
                         <button id = "networks" value = "networks" onClick={handleBtns} > Computer Networks </button>
                     </div>
-                    <div ref = {fth} className = "ola">
+                    <div ref = {fth} className = "ola mt-5">
                       <div className="mt-4 d-flex flex-row flex-wrap justify-content-center ">
                       {projs.length ? projs.map((proj) => (
                         <div key={proj.id} className = "frame d-flex flex-column p-3">

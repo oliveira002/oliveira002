@@ -15,7 +15,7 @@
 
 .proj {
     margin: auto;
-    font-size: 52px;
+    font-size: 72px;
     font-weight: bold;
 }
 
@@ -64,3 +64,6 @@ button.on {
     border-radius: 12px;
 }
 
+.hidden {
+    color: aquamarine;
+}

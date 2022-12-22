@@ -35,7 +35,7 @@
 .tags {
     background: none;
     border: none;
-    padding: 6px;
+    padding: 7px;
     width: fit-content;
     font-weight: bold;
     font-size: 12px;
@@ -78,4 +78,9 @@ button.on {
     width: 330px;
     word-wrap: break-word;
     text-align: left;
+}
+
+.all {
+    width: 320px;
+    max-width: 320px;
 }

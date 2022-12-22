@@ -21,6 +21,7 @@ export const Projects = () => {
           title: "Big Eats",
           type: "web",
           img: big,
+          tags: ["HTML","CSS","JavaScript","PHP"],
           desc: "Development of a website where restaurants can list and offer their menus for take-away, and consequently clients can order them. Developed using pure HTML, CSS, JavaScript, PHP & SQL.",
         },
         {
@@ -28,6 +29,7 @@ export const Projects = () => {
           title: "WeBid",
           type: "web",
           img: webid,
+          tags: ["HTML","CSS","JavaScript","PHP","Laravel","Bootstrap"],
           desc: "Development of a website capable of supporting an online auction service. Use of Laravel as a back-end framework and Bootstrap for the front-end. This project was split into 4 phases: Requirements Specification, Database Specification, Architecture Specification and Prototype & Final Product and Presentation.",
         },
         {
@@ -35,6 +37,7 @@ export const Projects = () => {
             title: "Public Transports Network",
             type: "algorithms",
             img: stcp,
+            tags: ["C++"],
             desc: "Development of an application in C++ that given a sample of the STCP dataset, would allow the user to find the best path to take between two stops. Use of Graphs and implementation of algorithms like DFS, BFS, Dijkstra & Prim",
           },
           {
@@ -42,6 +45,7 @@ export const Projects = () => {
             title: "Serial Port",
             type: "networks",
             img: stcp,
+            tags: ["C"],
             desc: "Development of an application with two distinct layers, the application and the link layer. This application would allow the transfer of a file between two PC's connected by a Serial Port.",
           },
           {
@@ -49,6 +53,7 @@ export const Projects = () => {
             title: "Bomberman",
             type: "algorithms",
             img: stcp,
+            tags: ["Java"],
             desc: "Development of a bomberman game using an object-oriented language (Java). Use of Git as a version control system. Design unit tests using JUnit, apply Design Patterns to solve design problems & identify Code Smells and use Refactoring techniques.",
           },
           {
@@ -56,7 +61,8 @@ export const Projects = () => {
             title: "FTP Application",
             type: "networks",
             img: stcp,
-            desc: "Development of an FTP Application that given an URL would download the file on the path with the filename specified on the URL.",
+            tags: ["C"],
+            desc: "Development of an FTP Application that given an URL would download the file on given the path with the filename specified on the URL.",
           },
       ];   
       
@@ -126,7 +132,7 @@ export const Projects = () => {
                 <div className="mx-auto">
                     <div ref = {fst}className="proj mt-5 impar"> Projects </div>
                     <div ref = {snd} className = "par mt-2">
-                      <p className="h3" >Here you can view most of the projects I developed, in case you want</p>
+                      <p className="h3" >Here you can view some of the projects I developed, in case you want</p>
                       <div className="h3" >to view them in detail by clicking on them you will be redirected to its repository.</div>
                     </div>
                     <div ref = {thr} className="filters mt-5 impar">
@@ -142,7 +148,12 @@ export const Projects = () => {
                             <h5 className="mt-2 fw-bold">{proj.title} </h5>
                             <img src = {proj.img} width = "320" height= "200"></img>
                             <div className="mt-3 ms-1">
-                              <div className="tags">HTML</div>
+                            <div className="d-flex all">
+                              {proj.tags.map((_, i) => (
+                                <div className="tags me-2" key={i+10}>{proj.tags[i]}</div>
+                              ))}
+                            </div>
+          
                             </div>
                           </button>
                           <div className="descr mt-2 ms-1">

@@ -38,7 +38,7 @@ export const Projects = () => {
             type: "algorithms",
             img: stcp,
             tags: ["C++"],
-            desc: "Development of an application in C++ that given a sample of the STCP dataset, would allow the user to find the best path to take between two stops. Use of Graphs and implementation of algorithms like DFS, BFS, Dijkstra & Prim",
+            desc: "Development of an application in C++ that given a sample of the STCP dataset, would allow the user to find the best path to take between two stops. Use of Graphs and implementation of algorithms like DFS, BFS, Dijkstra & Prim.",
           },
           {
             id: 4,
@@ -140,27 +140,28 @@ export const Projects = () => {
                         <button id = "algorithms" value = "algorithms" onClick={handleBtns}> Algorithms & Game Development </button>
                         <button id = "networks" value = "networks" onClick={handleBtns} > Computer Networks </button>
                     </div>
-                    <div ref = {fth} className = "ola mt-5">
+                    <div ref = {fth} className = "ola mt-5 mb-5">
                       <div className="mt-4 d-flex flex-row flex-wrap justify-content-center ">
                       {projs.length ? projs.map((proj) => (
                         <div key={proj.id} className = "frame d-flex flex-column p-3">
-                          <button className="">
-                            <h5 className="mt-2 fw-bold">{proj.title} </h5>
-                            <img src = {proj.img} width = "320" height= "200"></img>
-                            <div className="mt-3 ms-1">
-                            <div className="d-flex all">
-                              {proj.tags.map((_, i) => (
-                                <div className="tags me-2" key={i+10}>{proj.tags[i]}</div>
-                              ))}
+                            <div className="second">
+                              <h5 className="mt-2 fw-bold">{proj.title} </h5>
+                              <img src = {proj.img} width = "320" height= "200"></img>
+                              <div className="mt-3 ms-1">
+                                <div className="d-flex all">
+                                  {proj.tags.map((_, i) => (
+                                    <div className="tags me-2" key={i+10}>{proj.tags[i]}</div>
+                                  ))}
+                                </div>
+                              </div>
+                              <div className="descr mt-2 ms-1">
+                                <span>{proj.desc}</span>
+                              </div>
                             </div>
-          
-                            </div>
-                          </button>
-                          <div className="descr mt-2 ms-1">
-                            <span>{proj.desc}</span>
-                          </div>
+                            <div className="mt-2">
+                                <button className="button-34" role="button">Github Repository</button>
+                              </div>
                         </div>
-
                       )) : <h4>No Projects Yet</h4> }
                       </div>
                      </div>

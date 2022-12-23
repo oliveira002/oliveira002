@@ -13,24 +13,6 @@
     justify-content:space-between;
 }
 
-.proj {
-    margin: auto;
-    font-size: 72px;
-    font-weight: bold;
-}
-
-.filters button {
-    margin-right: 1em;
-    background: none;
-    border: none;
-    padding: 8px;
-    min-width: 3em;
-    font-size: 20px;
-    border-radius: 22px;
-    font-weight: bold;
-    overflow: hidden;
-    transition: transform .2s;
-}
 
 .tags {
     background: none;
@@ -44,21 +26,51 @@
     color: white;
 }
 
+.proj {
+    margin: auto;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.filters {
+    background-color: #fff;
+    box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
+    padding: 0.75rem;
+    border-radius: 99px;
+}
+
+.filters button {
+    background: none;
+    border: none;
+    padding: 8px;
+    min-width: 3em;
+    font-size: 20px;
+    margin-right: 2em;
+    border-radius: 22px;
+    font-weight: bold;
+    overflow: hidden;
+    transition: transform .2s;
+}
+
+
+
 .filters button:hover {
     transform: scale(1.02);
 }
 
 button.on {
-    background-color: rgb(17, 138, 185);
-    box-shadow: rgba(0, 0, 0, 0.42) 0px 0.5px 4px;
+    color: #185ee0;
+    background-color: #f0f4fa;
 }
 
 .frame {
     transition: transform .2s;
+    background-color: #3a73dd0a;
+    border-radius: 20px;
+    margin-right: 2em;
+    cursor: default;
 }
-.frame:hover {
-    transform: scale(1.02);
-}
+
 
 .frame img {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 0.5px 4px;
@@ -69,18 +81,39 @@ button.on {
     color: aquamarine;
 }
 
-.frame button {
-    background: none;
-    border: none;
-}
 
 .descr {
-    width: 330px;
-    word-wrap: break-word;
+    width: 332px;
+    word-break : break-all;
     text-align: left;
 }
 
-.all {
-    width: 320px;
-    max-width: 320px;
+.second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.button-34 {
+    background: #3977eb;
+    border-radius: 12px;
+    box-shadow: #5E5DF0 0 5px 10px -5px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+    margin-right: auto;
 }

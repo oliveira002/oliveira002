@@ -14,17 +14,21 @@
 
 
 .tags {
-
     border: none;
     padding: 7px;
     width: fit-content;
     font-weight: bold;
     font-size: 12px;
     border-radius: 22px;
-    background-color: #6b5ad3;
+    background-image: linear-gradient(to right, #cbc2fb 0%, #6638d3 1%, #afb1fd 100%);
     color: white;
     box-shadow: rgba(0, 0, 0, 0.32) 0px 0.5px 4px;
+    cursor: pointer;
+}
 
+        
+.tags:hover {
+    background-position: right center; 
 }
 
 .proj {
@@ -138,3 +142,6 @@ button.on {
 .tit {
     font-size: 26px;
 }
+
+         
+        

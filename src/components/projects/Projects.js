@@ -125,12 +125,11 @@ export const Projects = () => {
     }, [])
 
   
-    // { `"proj mt-2"${isVisible ? cls : ""}`}
     return(
         <div className="fix3" id = "projectos">
             <div className="selection mt-2">
                 <div className="mx-auto boas">
-                    <div ref = {fst}className="proj mt-5 impar"> Projects </div>
+                    <div ref = {fst}className="proj impar"> Projects </div>
                     <div ref = {snd} className = "par mt-2">
                       <p className="h3 sum" >Here you can view some of the projects I developed, in case you want to view them in detail by clicking on them you will be redirected to its repository</p>
                     </div>

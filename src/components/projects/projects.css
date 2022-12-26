@@ -1,5 +1,7 @@
 .fix3 {
     width: 100%;
+    color: white;
+    background: radial-gradient(108% 50.599999999999994% at 50% 0.5%,rgb(14 1 54 / 84%) 0%,#111013 100%);
 }
 
 .selection {
@@ -70,13 +72,16 @@ button.on {
 }
 
 .frame {
+    display: flex;
+    flex-direction: column;
     transition: transform .2s;
     background-color: #3a73dd0a;
     border-radius: 20px;
     margin-right: 2em;
     cursor: default;
     font-weight: bold;
-    height: fit-content;
+    height: 487px;
+    justify-content: space-between;
 }
 
 
@@ -143,5 +148,12 @@ button.on {
     font-size: 26px;
 }
 
+.rdm {
+    transition: transform .2s;
+    justify-content: flex-end;
+}
          
-        
+
+.rdm:hover {
+    transform: scale(1.04);
+}

@@ -75,7 +75,7 @@ button.on {
     display: flex;
     flex-direction: column;
     transition: transform .2s;
-    background-color: #3a73dd0a;
+    background-color: #ffffff0d;
     border-radius: 20px;
     margin-right: 2em;
     cursor: default;

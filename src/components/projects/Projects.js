@@ -69,7 +69,7 @@ export const Projects = () => {
       const fst = useRef();
       const snd = useRef();
       const thr = useRef();
-      const fth = useRef()
+      const fth = useRef();
       const start = projects.filter(proj => proj.type === 'web');
       const [projs, setProjs] = useState(start);
       const [currType, setCurrType] = useState("web");

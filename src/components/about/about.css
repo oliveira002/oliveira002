@@ -31,6 +31,11 @@
     margin-left: 5em;
 }
 
+a.cv, a.cv:hover {
+    color: white;
+    text-decoration: none;
+}
+
 .cv {
     background: #6b5ad3;
     border-radius: 12px;
@@ -40,10 +45,7 @@
     cursor: pointer;
     font-size: 20px;
     font-weight: 700;
-    opacity: 1;
-    outline: 0 solid transparent;
     padding: 18px 28px;
-    width: fit-content;
     word-break: break-word;
     border: 0;
     transition: transform .2s;

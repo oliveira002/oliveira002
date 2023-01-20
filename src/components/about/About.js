@@ -72,7 +72,7 @@ export const About = () => {
                                     <div ref = {thr} className="h4 fw-light par ">I'm <span className="h4 fw-bold"> 20 </span> Years Old and I'm studying <span className="h4 fw-bold">Informatics and Computing Engineering</span> at <span className="h4 fw-bold">FEUP</span> (3rd year)</div>
                                     <div ref = {fth} className="h4 fw-light par">I'm a very <span className="h4 fw-bold"> Flexible </span> and <span className="h4 fw-bold"> Communicate </span> person, always looking for challenges to improve and test my knowledge!</div>
                                     <div className="mt-4" >
-                                        <button ref = {cinc} className="cv par animate__delay-3s"> Download CV <FontAwesomeIcon className = "ms-2" icon={ faDownload }/></button>
+                                        <a href = "https://drive.google.com/uc?export=download&id=1PiAWjbF3X4UDsaIptI91QwnMeMpjqZc7" ref = {cinc} className="cv par animate__delay-3s"> Download CV <FontAwesomeIcon className = "ms-2" icon={ faDownload }/></a>
                                     </div>
                                 </div>
                                 <div className="skills ms-4">
@@ -118,7 +118,7 @@ export const About = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div ref = {dez} className="row mt-4 animate__delay-2s">
+                                <div ref = {dez} className="row mt-4 animate__delay-2s impar">
                                     <div className="col-sm">
                                         <div className="d-flex jojo">
                                             <img src = {sete}width="60" height = "60"></img>

@@ -48,6 +48,10 @@ header {
     text-decoration: none;
 }
 
+.logo, .logo:hover {
+    color: white;
+    text-decoration: none;
+}
 .logo {
     margin-left: 4em;
     color: white;

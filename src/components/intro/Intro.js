@@ -29,9 +29,9 @@ export const Intro = () => {
                   </a>
                 </div>
                 <ul className='d-flex socials ps-0 clr ms-5 animate__animated animate__bounceInLeft animate__delay-4s'>
-                  <li> <a href='#'><img src = {ig} width = "25" height= "25"></img></a></li>
-                  <li> <a href='#'><img src = {github} width = "25" height= "25"></img></a></li>
-                  <li> <a href='#'><img src = {lin} width = "25" height= "25"></img> </a></li>
+                  <li> <a href='https://www.instagram.com/joaowtv/' target="_blank"><img src = {ig} width = "25" height= "25"></img></a></li>
+                  <li> <a href='https://github.com/oliveira002' target="_blank"><img src = {github} width = "25" height= "25"></img></a></li>
+                  <li> <a href='https://www.linkedin.com/in/oliveira002/' target="_blank"><img src = {lin} width = "25" height= "25"></img> </a></li>
                 </ul>
               </div>
           </div>

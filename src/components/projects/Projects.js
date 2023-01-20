@@ -23,6 +23,8 @@ export const Projects = () => {
           img: big,
           tags: ["HTML","CSS","JavaScript","PHP"],
           desc: "Development of a website where restaurants can list and offer their menus for take-away, and consequently clients can order them.",
+          link: "https://github.com/oliveira002/FEUP-LTW",
+
         },
         {
           id: 2,
@@ -31,6 +33,7 @@ export const Projects = () => {
           img: webid,
           tags: ["HTML","CSS","JavaScript","PHP","Laravel","Bootstrap"],
           desc: "Development of a website capable of supporting an online auction service.",
+            link: "https://github.com/oliveira002/FEUP-LBAW",
         },
         {
             id: 3,
@@ -39,6 +42,7 @@ export const Projects = () => {
             img: stcp,
             tags: ["C++", "Graphs"],
             desc: "Development of an application in C++ that given a sample of the STCP dataset, would allow the user to find the best path to take between two stops.",
+            link: "https://github.com/oliveira002/FEUP-AED/tree/main/PROJ2",
           },
           {
             id: 4,
@@ -47,6 +51,7 @@ export const Projects = () => {
             img: stcp,
             tags: ["‎ C ‎"],
             desc: "Development of an application that allows the transfer of a file between two PC's connected by a Serial Port.",
+              link: "https://github.com/oliveira002/FEUP-RCOM/tree/main/PROJ1",
           },
           {
             id: 5,
@@ -55,6 +60,7 @@ export const Projects = () => {
             img: stcp,
             tags: ["Java", "Design Patterns", "Refactoring"],
             desc: "Development of a bomberman game using an object-oriented language.",
+              link: "https://github.com/oliveira002/FEUP-LDTS",
           },
           {
             id: 6,
@@ -63,6 +69,7 @@ export const Projects = () => {
             img: stcp,
             tags: ["‎ C ‎ ","Sockets"],
             desc: "Development of an FTP Application that downloads the file given on the URL.",
+              link: "https://github.com/oliveira002/FEUP-RCOM/tree/main/PROJ2",
           },
       ];   
       
@@ -157,7 +164,7 @@ export const Projects = () => {
                               </div>
                             </div>
                             <div className="mt-3 ms-2 rdm">
-                                <button className="button-34" role="button">Github Repository</button>
+                                <a href = {proj.link} className="button-34" target="_blank" role="button">Github Repository</a>
                             </div>
                         </div>
                       )) : <h4>No Projects Yet</h4> }

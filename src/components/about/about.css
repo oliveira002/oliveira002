@@ -1,11 +1,13 @@
 .fix4 {
     width: 100%;
+    background-color: #f8f8f8;
+    color: #202020;
 }
 .selection2 {
     margin-left: 5%;
     margin-right: 5%;
     align-items: center;
-    height: 84vh;
+    height: 100%;
 }
 
 .abt {
@@ -70,15 +72,13 @@ a.cv, a.cv:hover {
 .skills {
     text-align: center;
 }
-.container img {
-    border-radius: 50%;
-    background-color: rgba(235, 235, 235, 0.548);
-    box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(0, 0, 0, 0.15);
+.skillsCont  {
     transition: transform .2s;
 }
 
-.container img:hover {
+.skillsCont:hover {
     transform: scale(1.08);
+    cursor: pointer;
 }
 
 .jojo {
@@ -88,5 +88,28 @@ a.cv, a.cv:hover {
 
 .me {
     box-shadow: #585858 0 5px 10px -5px;
+}
 
+.skillsCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillsCont span {
+    margin-left: 0.5em;
+}
+.skillsCont:not(:first-child) {
+    margin-left: 5em;
+}
+
+.linha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+hr {
+    width: 100%;
+    border-top: 1px solid black;
 }

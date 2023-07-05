@@ -14,6 +14,10 @@ import seis from './6.png'
 import sete from './7.png'
 import oito from './8.png'
 import nove from './9.png'
+import diez from './10.png'
+import onze from './11.png'
+import doze from './12.png'
+import treze from './13.png'
 import cat from './cat.gif'
 
 export const About = () => {
@@ -27,7 +31,8 @@ export const About = () => {
       const nueve = useRef();
       const dez = useRef();
 
-      const tmp = [fst,snd,thr,fth,cinc,sei,set,nueve,dez]
+      //const tmp = [fst,snd,thr,fth,cinc,sei,set,nueve,dez]
+      const tmp = []
 
       useEffect(() => {
         for(let i = 0; i < tmp.length; i++) {
@@ -59,88 +64,72 @@ export const About = () => {
             <div className="selection2">
                 <div className="oioi">
                     <div ref = {fst} className="mt-5 impar">
-                        <div className ="abt fw-bold">My Skills</div>
-                        <div className="h5 fw-bold"> ~ a brief introduction</div>
+                        <span className ="abt fw-bold">Skills</span>
+                        <p className="h3 sum fw-light" >Here you can see the technologies I have more experience and that I'm most familiar with.</p>
                     </div>
                 </div>
-                <div className="d-flex">
-                    <div className="pic d-flex mb-4 mt-5">
-                        <img ref = {snd} className="me par" src= {me} width ="350" height="320"></img>
-                        <div className="rght">
-                            <div className="d-flex pronto ms-4">
-                                <div className="texto">
-                                    <div ref = {thr} className="h4 fw-light par ">I'm <span className="h4 fw-bold"> 20 </span> Years Old and I'm studying <span className="h4 fw-bold">Informatics and Computing Engineering</span> at <span className="h4 fw-bold">FEUP</span> (3rd year)</div>
-                                    <div ref = {fth} className="h4 fw-light par">I'm a very <span className="h4 fw-bold"> Flexible </span> and <span className="h4 fw-bold"> Communicate </span> person, always looking for challenges to improve and test my knowledge!</div>
-                                    <div className="mt-4" >
-                                        <a href = "https://drive.google.com/uc?export=download&id=1PiAWjbF3X4UDsaIptI91QwnMeMpjqZc7" ref = {cinc} className="cv par animate__delay-3s"> Download CV <FontAwesomeIcon className = "ms-2" icon={ faDownload }/></a>
-                                    </div>
-                                </div>
-                                <div className="skills ms-4">
-                            <span ref = {sei} className="sheader h4 fw-bold impar animate__delay-1s"> My Skills </span>
-                            <div className="container me-5">
-                                <div ref = {set} className="row mt-4 impar animate__delay-2s">
-                                    <div className="col-sm">
-                                        <div className="d-flex jojo">
-                                            <img src = {ht}width="60" height = "60"></img>
-                                            <span> HTML </span>
-                                        </div>
-                                    </div>
-                                    <div className="col-sm impar">
-                                        <div className="d-flex jojo">
-                                                <img src = {csss}width="60" height = "60"></img>
-                                                <span> CSS </span>
-                                        </div>
-                                    </div>
-                                    <div className="col-sm">
-                                        <div className="d-flex jojo">
-                                                <img src = {js}width="60" height = "60"></img>
-                                                <span> JavaScript </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div ref = {nueve} className="row mt-4 animate__delay-2s">
-                                    <div className="col-sm">
-                                        <div className="d-flex jojo">
-                                            <img src = {cpp}width="60" height = "60"></img>
-                                            <span> C/C++ </span>
-                                        </div>
-                                    </div>
-                                    <div className="col-sm">
-                                        <div className="d-flex jojo">
-                                                <img src = {cinco}width="60" height = "60"></img>
-                                                <span> Java </span>
-                                        </div>
-                                    </div>
-                                    <div className="col-sm">
-                                        <div className="d-flex jojo">
-                                                <img src = {nove}width="60" height = "60"></img>
-                                                <span> Python </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div ref = {dez} className="row mt-4 animate__delay-2s impar">
-                                    <div className="col-sm">
-                                        <div className="d-flex jojo">
-                                            <img src = {sete}width="60" height = "60"></img>
-                                            <span> SQL </span>
-                                        </div>
-                                    </div>
-                                    <div className="col-sm">
-                                        <div className="d-flex jojo">
-                                                <img src = {oito}width="60" height = "60"></img>
-                                                <span> PHP </span>
-                                        </div>
-                                    </div>
-                                    <div className="col-sm">
-                                        <div className="d-flex jojo">
-                                                <img src = {seis}width="60" height = "60"></img>
-                                                <span> Haskell </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div className="d-flex flex-column align-items-center container">
+                    <div className = "linha d-flex mt-2 mb-3">
+                        <span className="text">Frontend</span>
+                    </div>
+                    <div className ="d-flex align-items-center justify-content-center">
+                        <div className = "skillsCont">
+                            <img src={ht} width = "45"/>
+                            <span className = "fw-lighter"> HTML </span>
                         </div>
-                            </div>
+                        <div className = "skillsCont">
+                            <img src={csss} width = "45"/>
+                            <span className = "fw-lighter"> CSS </span>
+                        </div>
+                        <div className = "skillsCont">
+                            <img src={js} width = "45"/>
+                            <span className = "fw-lighter"> JavaScript </span>
+                        </div>
+                        <div className = "skillsCont">
+                            <img src={cinco} width = "45" className="me-1"/>
+                            <span className = "fw-lighter"> React </span>
+                        </div>
+                    </div>
+                    <div className = "linha d-flex mt-4 mb-3">
+                        <span class="text">Backend</span>
+                    </div>
+                    <div className ="d-flex align-items-center justify-content-center">
+                        <div className = "skillsCont">
+                            <img src={cpp} width = "45"/>
+                            <span className = "fw-lighter"> C/C++ </span>
+                        </div>
+                        <div className = "skillsCont">
+                            <img src={nove} width = "45" className="me-1"/>
+                            <span className = "fw-lighter"> Python </span>
+                        </div>
+                        <div className = "skillsCont">
+                            <img src={seis} width = "45"/>
+                            <span className = "fw-lighter"> Java </span>
+                        </div>
+                        <div className = "skillsCont">
+                            <img src={diez} width = "45"/>
+                            <span className = "fw-lighter"> NodeJS </span>
+                        </div>
+                        <div className = "skillsCont">
+                            <img src={oito} width = "45"/>
+                            <span className = "fw-lighter"> PHP </span>
+                        </div>
+                    </div>
+                    <div className = "linha d-flex mt-4 mb-3">
+                        <span class="text">Database</span>
+                    </div>
+                    <div className ="d-flex align-items-center justify-content-center">
+                        <div className = "skillsCont">
+                            <img src={doze} width = "45"/>
+                            <span className = "fw-lighter"> MySQL </span>
+                        </div>
+                        <div className = "skillsCont">
+                            <img src={onze} width = "45" className="me-1"/>
+                            <span className = "fw-lighter"> MongoDB </span>
+                        </div>
+                        <div className = "skillsCont">
+                            <img src={treze} width = "45"/>
+                            <span className = "fw-lighter"> PostgreSQL </span>
                         </div>
                     </div>
                 </div>

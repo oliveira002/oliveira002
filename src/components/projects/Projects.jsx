@@ -149,7 +149,7 @@ export const Projects = () => {
                     <div ref = {fth} className = "ola mt-5 mb-5">
                       <div className="mt-4 d-flex justify-content-center flex-wrap ">
                       {projs.length ? projs.map((proj,index) => (
-                        <div key={proj.id} className = {`frame p-3 align-items-center ${index >= 2 ? '' : ''}`}>
+                        <div key={proj.id} className = 'frame p-3 align-items-center'>
                             <div className="second">
                               <div className="images">
                                 {proj.id !== 9 ?  <h5 className="mt-2 fw-bold tit">{proj.title} </h5> : null

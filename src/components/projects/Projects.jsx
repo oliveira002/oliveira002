@@ -3,9 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './projects.css';
 import {useRef, useState } from "react";
 import { useEffect } from "react";
-import stcp from './stcp.png'
+import uber from './food.png'
+import sensor from './sensor.png'
 import webid from './webid.png'
-import big from './uber.png'
+import stcp from './stcp.png'
+import big from './bigeats.png'
+import asae from './asae.jpg'
+import shop from './shop.jpg'
 import { observe } from "react-intersection-observer";
 
 
@@ -17,7 +21,7 @@ export const Projects = () => {
           id: 1,
           title: "Big Eats",
           type: "web",
-          img: big,
+          img: uber,
           tags: ["HTML","CSS","JavaScript","PHP"],
           desc: "Development of a website where restaurants can list and offer their menus for take-away, and consequently clients can order them.",
           link: "https://github.com/oliveira002/FEUP-LTW",
@@ -28,64 +32,46 @@ export const Projects = () => {
           title: "WeBid",
           type: "web",
           img: webid,
-          tags: ["HTML","CSS","JavaScript","PHP","Laravel","Bootstrap"],
-          desc: "Development of a website capable of supporting an online auction service.",
+          tags: ["HTML","CSS","JavaScript","Laravel","Bootstrap"],
+          desc: "Development of a website capable of supporting an online auction service. Users can create/bid on the different auctions that are available at the time",
             link: "https://github.com/oliveira002/FEUP-LBAW",
         },
         {
-            id: 3,
-            title: "Public Transports Network",
-            type: "algorithms",
-            img: stcp,
-            tags: ["C++", "Graphs"],
-            desc: "Development of an application in C++ that given a sample of the STCP dataset, would allow the user to find the best path to take between two stops.",
-            link: "https://github.com/oliveira002/FEUP-AED/tree/main/PROJ2",
-          },
-          {
-            id: 4,
-            title: "Serial Port",
-            type: "networks",
-            img: stcp,
-            tags: ["‎ C ‎"],
-            desc: "Development of an application that allows the transfer of a file between two PC's connected by a Serial Port.",
-              link: "https://github.com/oliveira002/FEUP-RCOM/tree/main/PROJ1",
-          },
-          {
-            id: 5,
-            title: "Bomberman",
-            type: "algorithms",
-            img: stcp,
-            tags: ["Java", "Design Patterns", "Refactoring"],
-            desc: "Development of a bomberman game using an object-oriented language.",
-              link: "https://github.com/oliveira002/FEUP-LDTS",
-          },
-          {
-            id: 6,
-            title: "FTP Application",
-            type: "networks",
-            img: stcp,
-            tags: ["‎ C ‎ ","Sockets"],
-            desc: "Development of an FTP Application that downloads the file given on the URL.",
-              link: "https://github.com/oliveira002/FEUP-RCOM/tree/main/PROJ2",
-          },
-          {
-            id: 7,
-            title: "ASAE Optimal Route Problem",
-            type: "ia",
-            img: stcp,
-            tags: ["‎ C ‎ ","Sockets"],
-            desc: "Development of an FTP Application that downloads the file given on the URL.",
-              link: "https://github.com/oliveira002/FEUP-RCOM/tree/main/PROJ2",
-          },
-          {
-            id: 8,
-            title: "Online Shopper Purchasing Intention",
-            type: "ia",
-            img: stcp,
-            tags: ["‎ C ‎ ","Sockets"],
-            desc: "Development of an FTP Application that downloads the file given on the URL.",
-              link: "https://github.com/oliveira002/FEUP-RCOM/tree/main/PROJ2",
-          },
+          id: 6,
+          title: "Public Transports Network",
+          type: "ia",
+          img: stcp,
+          tags: ["C++", "Graphs"],
+          desc: "Development of an application that given a sample of the STCP dataset, would allow the user to find the best path to take between two stops.",
+          link: "https://github.com/oliveira002/FEUP-AED/tree/main/PROJ2",
+        },
+        {
+          id: 7,
+          title: "ASAE Optimal Route Problem",
+          type: "ia",
+          img: asae,
+          tags: ["Python","Optimization"],
+          desc: "Development of algorithms to solve the ASAE's problem of planning and resources' allocation to cover the inspection of the establishments.",
+            link: "https://github.com/oliveira002/FEUP-RCOM/tree/main/PROJ2",
+        },
+        {
+          id: 8,
+          title: "Online Shopper Purchasing Intention",
+          type: "ia",
+          img: shop,
+          tags: ["Machine Learning","Python","Classification"],
+          desc: "Supervised learning project that focused on the application of Machine Learning models.",
+            link: "https://github.com/oliveira002/FEUP-RCOM/tree/main/PROJ2",
+        },
+        {
+          id: 9,
+          title: "SensorHub",
+          type: "web",
+          img: sensor,
+          tags: ["ReactJS","NodeJS","MongoDB"],
+          desc: "Development of a Full Stack Web Application that allows the configuration of different Kallisto devices and also display real-time data from the sensors.",
+            link: "https://github.com/oliveira002/FEUP-RCOM/tree/main/PROJ2",
+        },
       ];   
       
       const fst = useRef();
@@ -157,16 +143,19 @@ export const Projects = () => {
                     </div>
                     <div ref = {thr} className="filters mt-5 impar">
                         <button id = "web"className="on"  value = "web" onClick={handleBtns} > Web Development </button>
-                        <button id = "ai" value = "ai" onClick={handleBtns}> Artificial Intelligence </button>
-                        <button id = "networks" value = "networks" onClick={handleBtns} > Computer Networks </button>
+                        <button id = "ia" value = "ia" onClick={handleBtns}> Artificial Intelligence </button>
+                        <button id = "other" value = "other" onClick={handleBtns} > Other </button>
                     </div>
                     <div ref = {fth} className = "ola mt-5 mb-5">
-                      <div className="mt-4 d-flex flex-row flex-wrap justify-content-center ">
-                      {projs.length ? projs.map((proj) => (
-                        <div key={proj.id} className = "frame d-flex flex-column p-3">
+                      <div className="mt-4 d-flex justify-content-center flex-wrap ">
+                      {projs.length ? projs.map((proj,index) => (
+                        <div key={proj.id} className = {`frame p-3 align-items-center ${index >= 2 ? 'mt-5' : ''}`}>
                             <div className="second">
-                              <h5 className="mt-2 fw-bold tit">{proj.title} </h5>
-                              <img src = {proj.img} width = "320" height= "200"></img>
+                              <div className="images">
+                                {proj.id !== 9 ?  <h5 className="mt-2 fw-bold tit">{proj.title} </h5> : null
+                                }
+                                <img src = {proj.img} width = "320" height= "200"></img>
+                              </div>
                               <div className="mt-3 ms-1">
                                 <div className="d-flex all">
                                   {proj.tags.map((_, i) => (
@@ -178,11 +167,14 @@ export const Projects = () => {
                                 <span>{proj.desc}</span>
                               </div>
                             </div>
-                            <div className="mt-3 ms-2 rdm">
-                                <a href = {proj.link} className="button-34" target="_blank" role="button">Github Repository</a>
+                            <div className="mt-3 ms-2 mb-4 rdm">
+                                <a href = {proj.link} className="button-34" target="_blank" role="button">Repository</a>
                             </div>
                         </div>
-                      )) : <h4>No Projects Yet</h4> }
+                      )) 
+                      : 
+                      <h4>No Projects Yet</h4>
+                      }
                       </div>
                      </div>
                 </div>

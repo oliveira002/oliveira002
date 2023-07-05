@@ -65,7 +65,7 @@ export const About = () => {
         <div className="fix4" id = "about">
             <div className="selection2">
                 <div className="oioi">
-                    <div ref = {fst} className="mt-5 impar">
+                    <div ref = {fst} className="mt-3 impar">
                         <span className ="abt fw-bold">Skills</span>
                         <p className="h3 sum fw-light" >Here you can see the technologies I have more experience and that I'm most familiar with.</p>
                     </div>

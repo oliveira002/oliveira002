@@ -22,7 +22,7 @@
     font-weight: bold;
     font-size: 12px;
     border-radius: 22px;
-    background-image: linear-gradient(to right, #cbc2fb 0%, #6638d3 1%, #afb1fd 100%);
+    background-image: linear-gradient(to right, #9c93cf 0%, #8e5ad3 1%, #b18fdd 100%);
     color: white;
     box-shadow: rgba(0, 0, 0, 0.32) 0px 0.5px 4px;
     cursor: pointer;
@@ -60,8 +60,6 @@
     transition: transform .2s;
 }
 
-
-
 .filters button:hover {
     transform: scale(1.02);
 }
@@ -78,9 +76,10 @@ button.on {
     background-color: #ffffff0d;
     border-radius: 20px;
     margin-right: 2em;
+    width: 400px;
     cursor: default;
     font-weight: bold;
-    height: 487px;
+    height: 450px;
     justify-content: space-between;
 }
 
@@ -116,9 +115,9 @@ a.button-34, a.button-34:hover {
 }
 
 .button-34 {
-    background: #6b5ad3;
+    background: #8e5ad3;
     border-radius: 12px;
-    box-shadow: #6b5ad3 0 5px 10px -5px;
+    box-shadow: #8e5ad3 0 5px 10px -5px;
     box-sizing: border-box;
     color: white;
     cursor: pointer;
@@ -126,7 +125,7 @@ a.button-34, a.button-34:hover {
     font-weight: 700;
     opacity: 1;
     outline: 0 solid transparent;
-    padding: 8px 18px;
+    padding: 14px 24px;
     user-select: none;
     touch-action: manipulation;
     width: fit-content;
@@ -161,4 +160,21 @@ a.button-34, a.button-34:hover {
 
 .rdm:hover {
     transform: scale(1.04);
+}
+
+.second h5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px #2c2c2c;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+
+.images {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
 }

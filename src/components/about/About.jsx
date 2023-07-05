@@ -18,6 +18,7 @@ import diez from './10.png'
 import onze from './11.png'
 import doze from './12.png'
 import treze from './13.png'
+import fourteen from './14.png'
 import cat from './cat.gif'
 import { Timeline } from 'flowbite-react';
 
@@ -114,6 +115,10 @@ export const About = () => {
                         <div className = "skillsCont">
                             <img src={oito} width = "45"/>
                             <span className = "fw-lighter"> PHP </span>
+                        </div>
+                        <div className = "skillsCont">
+                            <img src={fourteen} width = "45"/>
+                            <span className = "fw-lighter"> Laravel </span>
                         </div>
                         <hr/>
                     </div>

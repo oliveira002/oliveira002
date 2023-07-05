@@ -68,6 +68,24 @@ export const Projects = () => {
             desc: "Development of an FTP Application that downloads the file given on the URL.",
               link: "https://github.com/oliveira002/FEUP-RCOM/tree/main/PROJ2",
           },
+          {
+            id: 7,
+            title: "ASAE Optimal Route Problem",
+            type: "ia",
+            img: stcp,
+            tags: ["‎ C ‎ ","Sockets"],
+            desc: "Development of an FTP Application that downloads the file given on the URL.",
+              link: "https://github.com/oliveira002/FEUP-RCOM/tree/main/PROJ2",
+          },
+          {
+            id: 8,
+            title: "Online Shopper Purchasing Intention",
+            type: "ia",
+            img: stcp,
+            tags: ["‎ C ‎ ","Sockets"],
+            desc: "Development of an FTP Application that downloads the file given on the URL.",
+              link: "https://github.com/oliveira002/FEUP-RCOM/tree/main/PROJ2",
+          },
       ];   
       
       const fst = useRef();
@@ -139,7 +157,7 @@ export const Projects = () => {
                     </div>
                     <div ref = {thr} className="filters mt-5 impar">
                         <button id = "web"className="on"  value = "web" onClick={handleBtns} > Web Development </button>
-                        <button id = "algorithms" value = "algorithms" onClick={handleBtns}> Algorithms & Game Development </button>
+                        <button id = "ai" value = "ai" onClick={handleBtns}> Artificial Intelligence </button>
                         <button id = "networks" value = "networks" onClick={handleBtns} > Computer Networks </button>
                     </div>
                     <div ref = {fth} className = "ola mt-5 mb-5">

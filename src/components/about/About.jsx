@@ -31,8 +31,7 @@ export const About = () => {
       const nueve = useRef();
       const dez = useRef();
 
-      //const tmp = [fst,snd,thr,fth,cinc,sei,set,nueve,dez]
-      const tmp = []
+      const tmp = [fst,snd,thr,fth,cinc,sei,set]
 
       useEffect(() => {
         for(let i = 0; i < tmp.length; i++) {
@@ -69,10 +68,10 @@ export const About = () => {
                     </div>
                 </div>
                 <div className="d-flex flex-column align-items-center container">
-                    <div className = "linha d-flex mt-2 mb-3">
-                        <span className="text">Frontend</span>
+                    <div ref = {snd} className = "linha d-flex mt-3 mb-3 impar">
+                        <span className="text h5">Frontend</span>
                     </div>
-                    <div className ="d-flex align-items-center justify-content-center">
+                    <div ref = {thr} className ="d-flex align-items-center justify-content-center par">
                         <div className = "skillsCont">
                             <img src={ht} width = "45"/>
                             <span className = "fw-lighter"> HTML </span>
@@ -90,10 +89,10 @@ export const About = () => {
                             <span className = "fw-lighter"> React </span>
                         </div>
                     </div>
-                    <div className = "linha d-flex mt-4 mb-3">
-                        <span class="text">Backend</span>
+                    <div ref = {fth} className = "linha d-flex mt-5 mb-3 impar">
+                        <span class="text h5">Backend</span>
                     </div>
-                    <div className ="d-flex align-items-center justify-content-center">
+                    <div ref = {cinc} className ="d-flex align-items-center justify-content-center par">
                         <div className = "skillsCont">
                             <img src={cpp} width = "45"/>
                             <span className = "fw-lighter"> C/C++ </span>
@@ -114,11 +113,12 @@ export const About = () => {
                             <img src={oito} width = "45"/>
                             <span className = "fw-lighter"> PHP </span>
                         </div>
+                        <hr/>
                     </div>
-                    <div className = "linha d-flex mt-4 mb-3">
-                        <span class="text">Database</span>
+                    <div ref = {sei} className = "linha d-flex mt-5 mb-2 impar">
+                        <span class="text h5">Database</span>
                     </div>
-                    <div className ="d-flex align-items-center justify-content-center">
+                    <div ref = {set} className ="d-flex align-items-center justify-content-center par mb-5">
                         <div className = "skillsCont">
                             <img src={doze} width = "45"/>
                             <span className = "fw-lighter"> MySQL </span>

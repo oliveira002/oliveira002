@@ -6,10 +6,7 @@ import { useEffect } from "react";
 import stcp from './stcp.png'
 import webid from './webid.png'
 import big from './uber.png'
-import { Row } from "react-bootstrap";
 import { observe } from "react-intersection-observer";
-import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
 
 
 

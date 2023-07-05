@@ -12,6 +12,7 @@ export const Navbar = () => {
                         <li> <a href= "#home" className="h5 reset">Home</a></li>
                         <li> <a href= "#projectos" className="h5 reset">Projects</a></li>
                         <li> <a href= "#about" className="h5 reset">About Me</a></li>
+                        <li> <a href= "#" className="h5 reset">Resume</a></li>
                     </ul>
                 </nav>
         </header>

@@ -48,14 +48,19 @@ header {
     text-decoration: none;
 }
 
-.logo, .logo:hover {
+a.logo, a.logo:hover {
     color: white;
     text-decoration: none;
 }
-.logo {
+a.logo {
     margin-left: 4em;
     color: white;
+    text-decoration: none;
 }
 
+header a {
+    color: white;
+    text-decoration: none;
+}
 
 

@@ -17,9 +17,9 @@ export const Intro = () => {
               <div className="typer fw-bold">
                   Hey! I'm Oliveira.
               </div>
-              <div className='res h3 animate__animated animate__fadeIn animate__delay-2s'>
+              <span className='res h3 animate__animated animate__fadeIn animate__delay-2s'>
                   Welcome to my portfolio! I'm studying Informatics and Computing Engineering at FEUP. Here you can find the most interesting projects I developed throughout the course.
-              </div>
+              </span>
               <div className='d-flex amazing'>
                 <div className='animate__animated animate__bounceIn animate__delay-3s'>
                   <a href = '#'>

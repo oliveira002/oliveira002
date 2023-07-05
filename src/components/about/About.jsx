@@ -59,7 +59,7 @@ export const About = () => {
             <div className="selection2">
                 <div className="oioi">
                     <div ref = {fst} className="mt-5 impar">
-                        <div className ="abt fw-bold">About Me</div>
+                        <div className ="abt fw-bold">My Skills</div>
                         <div className="h5 fw-bold"> ~ a brief introduction</div>
                     </div>
                 </div>

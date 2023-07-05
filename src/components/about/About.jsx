@@ -19,6 +19,8 @@ import onze from './11.png'
 import doze from './12.png'
 import treze from './13.png'
 import cat from './cat.gif'
+import { Timeline } from 'flowbite-react';
+
 
 export const About = () => {
       const fst = useRef();
@@ -71,7 +73,7 @@ export const About = () => {
                     <div ref = {snd} className = "linha d-flex mt-3 mb-3 impar">
                         <span className="text h5">Frontend</span>
                     </div>
-                    <div ref = {thr} className ="d-flex align-items-center justify-content-center par">
+                    <div ref = {thr} className ="d-flex align-items-center justify-content-center par conti">
                         <div className = "skillsCont">
                             <img src={ht} width = "45"/>
                             <span className = "fw-lighter"> HTML </span>
@@ -92,7 +94,7 @@ export const About = () => {
                     <div ref = {fth} className = "linha d-flex mt-5 mb-3 impar">
                         <span class="text h5">Backend</span>
                     </div>
-                    <div ref = {cinc} className ="d-flex align-items-center justify-content-center par">
+                    <div ref = {cinc} className ="d-flex align-items-center justify-content-center par conti">
                         <div className = "skillsCont">
                             <img src={cpp} width = "45"/>
                             <span className = "fw-lighter"> C/C++ </span>
@@ -118,7 +120,7 @@ export const About = () => {
                     <div ref = {sei} className = "linha d-flex mt-5 mb-2 impar">
                         <span class="text h5">Database</span>
                     </div>
-                    <div ref = {set} className ="d-flex align-items-center justify-content-center par mb-5">
+                    <div ref = {set} className ="d-flex align-items-center justify-content-center par mb-5 conti">
                         <div className = "skillsCont">
                             <img src={doze} width = "45"/>
                             <span className = "fw-lighter"> MySQL </span>

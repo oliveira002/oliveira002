@@ -1,6 +1,6 @@
 .fix4 {
     width: 100%;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     color: #202020;
 }
 .selection2 {
@@ -103,9 +103,24 @@ a.cv, a.cv:hover {
     margin-left: 5em;
 }
 
-hr {
+.conti {
+    padding: 2rem 3rem;
+    display: inline-block;
+    border: 3px solid #333;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    background: #ffffff;
+}
+
+.conti::before {
+    border: 2px solid #353535;
+    display: block;
     width: 100%;
-    margin: 0;
-    border: none;
-    border-top: 5px solid black;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+    border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
 }

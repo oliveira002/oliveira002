@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './myself.css'
 import {useRef, useState } from "react";
 import { useEffect } from "react";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faDownload, faLocation, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import {Dropdown} from './Dropdown'
 import me from './me.jpg'
 
@@ -19,10 +19,10 @@ export const Myself = () => {
       const nueve = useRef();
       const dez = useRef();
 
-      const tmp = [fst,snd,thr,fth,cinc,sei,set]
+      const tmp = [fst,snd,thr]
 
       useEffect(() => {
-        /*
+        
         for(let i = 0; i < tmp.length; i++) {
           const observer1 = new IntersectionObserver((entries) => {
             const entry = entries[0];
@@ -42,7 +42,7 @@ export const Myself = () => {
             }
           })
           observer1.observe(tmp[i].current);
-        }*/
+        }
       }, [])
 
 
@@ -50,13 +50,23 @@ export const Myself = () => {
     return(
         <div className="fix4 " id = "about">
             <div className="selection2 d-flex flex-column align-items-center">
-            <div className="oioi mb">
-                <div className="mt-3 impar">
+            <div className="oioi mb d-flex flex-column">
+                <div ref={fst} className="mt-3 impar d-flex flex-column align-items-center">
                     <span className ="abt fw-bold">Myself</span>
                     <p className="h3 sum fw-light" >Here you will find information related to my education & career.</p>
                 </div>
+                <div ref={snd} className="picture par">
+                    <img src={me}/>
+                    <div className="d-flex flex-column align-items-center mt-1">
+                        <span>João Oliveira, 21 years old</span>
+                        <div className="d-flex flex-row align-items-center">
+                            <FontAwesomeIcon icon={faLocationDot}/>
+                            <span className="ms-1">Porto, Portugal</span>
+                        </div>
+                    </div>              
+                </div>
             </div>
-            <div className="d-flex flex-column lista mb-5">
+            <div className="d-flex flex-column lista mb-5 impar" ref = {thr}>
                 <Dropdown
                     date="2023 - Present"
                     desc="Currently pursuing a **Master's Degree** in Informatics and Computing Engineering at FEUP."

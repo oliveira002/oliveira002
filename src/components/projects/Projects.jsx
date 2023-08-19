@@ -139,7 +139,7 @@ export const Projects = () => {
                 <div className="mx-auto boas">
                     <div ref = {fst}className="proj impar mt-4"> Projects </div>
                     <div ref = {snd} className = "par mt-2">
-                      <p className="h3 sum" >Here you can view some of the projects I developed, in case you want to view them in detail by clicking on them you will be redirected to its repository</p>
+                      <p className="h3 sum" >Here you can check the most interesting projects I have developed and what they focus on.</p>
                     </div>
                     <div ref = {thr} className="filters mt-5 impar">
                         <button id = "web"className="on"  value = "web" onClick={handleBtns} > Web Development </button>

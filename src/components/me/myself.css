@@ -1,0 +1,18 @@
+.fix4 {
+    width: 100%;
+    background-color: #ffffff;
+    color: #202020;
+}
+
+.selection2 {
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    height: 100%;
+}
+
+.lista {
+    width: 100%;
+    align-items: center;
+}
+

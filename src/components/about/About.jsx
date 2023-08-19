@@ -1,7 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './about.css'
-import me from './me.jpg'
 import {useRef, useState } from "react";
 import { useEffect } from "react";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
@@ -20,7 +19,6 @@ import doze from './12.png'
 import treze from './13.png'
 import fourteen from './14.png'
 import cat from './cat.gif'
-import { Timeline } from 'flowbite-react';
 
 
 export const About = () => {
@@ -67,7 +65,7 @@ export const About = () => {
                 <div className="oioi">
                     <div ref = {fst} className="mt-3 impar">
                         <span className ="abt fw-bold">Skills</span>
-                        <p className="h3 sum fw-light" >Here you can see the technologies I have more experience and that I'm most familiar with.</p>
+                        <p className="h3 sum fw-light" >Here you can see the technologies I have more experience on and that I'm most familiar with.</p>
                     </div>
                 </div>
                 <div className="d-flex flex-column align-items-center container">
@@ -93,7 +91,7 @@ export const About = () => {
                         </div>
                     </div>
                     <div ref = {fth} className = "linha d-flex mt-5 mb-3 impar">
-                        <span class="text h5">Backend</span>
+                        <span className="text h5">Backend</span>
                     </div>
                     <div ref = {cinc} className ="d-flex align-items-center justify-content-center par conti">
                         <div className = "skillsCont">
@@ -123,7 +121,7 @@ export const About = () => {
                         <hr/>
                     </div>
                     <div ref = {sei} className = "linha d-flex mt-5 mb-2 impar">
-                        <span class="text h5">Database</span>
+                        <span className="text h5">Database</span>
                     </div>
                     <div ref = {set} className ="d-flex align-items-center justify-content-center par mb-5 conti">
                         <div className = "skillsCont">

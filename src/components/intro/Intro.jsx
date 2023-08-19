@@ -19,7 +19,7 @@ export const Intro = () => {
               </div>
               <div className='d-flex flex-column'>
                 <span className='res h3 animate__animated animate__fadeIn animate__delay-2s'>
-                    Welcome to my portfolio! I just finished my Bachelor's degree in Informatics and Computing Engineering at FEUP and I'm currently pursuing a Master's degree!
+                    Welcome to my portfolio!
                 </span>
                 <span className='res h3 animate__animated animate__fadeIn animate__delay-3s'>
                     Here you can find the most interesting projects I developed throughout the course.

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './myself.css'
 import {useRef, useState } from "react";
 import { useEffect } from "react";
-import { faDownload, faLocation, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faDownload, faEnvelope, faLocation, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import {Dropdown} from './Dropdown'
 import me from './me.jpg'
 
@@ -12,12 +12,7 @@ export const Myself = () => {
       const fst = useRef();
       const snd = useRef();
       const thr = useRef();
-      const fth = useRef();
-      const cinc = useRef();
-      const sei = useRef();
-      const set = useRef();
-      const nueve = useRef();
-      const dez = useRef();
+
 
       const tmp = [fst,snd,thr]
 
@@ -66,7 +61,7 @@ export const Myself = () => {
                     </div>              
                 </div>
             </div>
-            <div className="d-flex flex-column lista mb-5 impar" ref = {thr}>
+            <div className="d-flex flex-column lista mb-5 mt-3 impar" ref = {thr}>
                 <Dropdown
                     date="2023 - Present"
                     desc="Currently pursuing a **Master's Degree** in Informatics and Computing Engineering at FEUP."

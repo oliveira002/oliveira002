@@ -60,7 +60,7 @@ export const About = () => {
 
 
     return(
-        <div className="fix4" id = "about">
+        <div className="fix4" id = "skills">
             <div className="selection2">
                 <div className="oioi">
                     <div ref = {fst} className="mt-3 impar">

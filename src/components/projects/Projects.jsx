@@ -52,7 +52,7 @@ export const Projects = () => {
           img: asae,
           tags: ["Python","Optimization"],
           desc: "Development of algorithms to solve the ASAE's problem of planning and resources' allocation to cover the inspection of the establishments.",
-            link: "https://github.com/oliveira002/FEUP-RCOM/tree/main/PROJ2",
+            link: "https://github.com/oliveira002/FEUP-IA/tree/main/PROJ1",
         },
         {
           id: 8,
@@ -60,8 +60,8 @@ export const Projects = () => {
           type: "ia",
           img: shop,
           tags: ["Machine Learning","Python","Classification"],
-          desc: "Supervised learning project that focused on the application of Machine Learning models.",
-            link: "https://github.com/oliveira002/FEUP-RCOM/tree/main/PROJ2",
+          desc: "Machine Learning project that employs Supervised learning to predict whether users are likely to make a purchase.",
+            link: "https://github.com/oliveira002/FEUP-IA/tree/main/PROJ2",
         },
         {
           id: 9,
@@ -70,7 +70,7 @@ export const Projects = () => {
           img: sensor,
           tags: ["ReactJS","NodeJS","MongoDB"],
           desc: "Development of a Full Stack Web Application that allows the configuration of different Kallisto devices and also display real-time data from the sensors.",
-            link: "https://github.com/oliveira002/FEUP-RCOM/tree/main/PROJ2",
+            link: "",
         },
       ];   
       

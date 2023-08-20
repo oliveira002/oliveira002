@@ -27,7 +27,7 @@ export const Intro = () => {
               </div>
               <div className='d-flex amazing'>
                 <div className='animate__animated animate__bounceIn animate__delay-3s'>
-                  <a href = '#'>
+                  <a href = '#projects'>
                     <button className='work'>
                       <span className='h3'>Check Out My Work!</span>
                     </button>

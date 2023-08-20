@@ -4,7 +4,7 @@ import './contact.css'
 import {useRef, useState } from "react";
 import { useEffect } from "react";
 import { faDownload, faLocation, faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import resume from '../../../public/resume.pdf';
+import resume from '../../../resume.pdf';
 
 
 export const Contact = () => {
@@ -58,7 +58,7 @@ export const Contact = () => {
                 <ul className = "links2">
                     <li> <a href= "#home" className="h5 reset">Home</a></li>
                     <li> <a href= "#skills" className="h5 reset">Skills</a></li>
-                    <li> <a href= "#projectos" className="h5 reset">Projects</a></li>
+                    <li> <a href= "#projects" className="h5 reset">Projects</a></li>
                     <li> <a href= "#about" className="h5 reset">About Me</a></li>
                     <li> <a href={resume} target="_blank" className="h5 reset">Resume</a></li>
                 </ul>

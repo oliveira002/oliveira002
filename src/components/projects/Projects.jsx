@@ -134,7 +134,7 @@ export const Projects = () => {
 
   
     return(
-        <div className="fix3" id = "projectos">
+        <div className="fix3" id = "projects">
             <div className="selection">
                 <div className="mx-auto boas">
                     <div ref = {fst}className="proj impar mt-4"> Projects </div>

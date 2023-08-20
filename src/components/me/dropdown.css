@@ -1,8 +1,7 @@
 .caixa {
     width: 40%;
 }
-
-.drop {
+button.drop {
     background-color: #1d1c1c;
     color: white;
     border-radius: 12px;
@@ -11,6 +10,7 @@
     font-weight: bold;
     flex-direction: row;
     align-items: center;
+    border: none;
 }
 
 .drop .right {

@@ -24,15 +24,13 @@ export const Dropdown = (props) => {
 
   return (
     <div className='d-flex flex-column caixa mt-2'>
-      <div className='d-flex flex-row drop'>
+      <button className='d-flex flex-row drop' onClick={handleClick}>
         <span>{props.title}</span>
         <div className='right'>
           <span className='me-2 fw-lighter'>{props.date}</span>
-          <button onClick={handleClick}>
-            <FontAwesomeIcon icon={!isOpen ? faAngleDown : faAngleUp} />
-          </button>
+          <FontAwesomeIcon icon={!isOpen ? faAngleDown : faAngleUp} />
         </div>
-      </div>
+      </button>
       {isOpen && <div className='bottom mt-3'>{formatDescription(props.desc)}</div>}
     </div>
   );

@@ -96,7 +96,7 @@ button.on {
 
 .descr {
     width: 332px;
-    word-break : break-all;
+    word-break : word-break;
     text-align: left;
 }
 

@@ -52,7 +52,7 @@ export const Myself = () => {
                 </div>
                 <div ref={snd} className="picture par">
                     <img src={me}/>
-                    <div className="d-flex flex-column align-items-center mt-1">
+                    <div className="d-flex flex-column align-items-center mt-4">
                         <span>João Oliveira, 21 years old</span>
                         <div className="d-flex flex-row align-items-center">
                             <FontAwesomeIcon icon={faLocationDot}/>
